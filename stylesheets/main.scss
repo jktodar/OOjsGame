@@ -1,0 +1,145 @@
+$backColor:#888;
+$divColor1:blue;
+$divColor2:red;
+$divColorGame:green;
+$textColor: #eee;
+$modalText: #555;
+$radius: 4px;
+$defMargin: 10px;
+$defHeight:40px;
+$defWidth:22vw;
+
+body{
+	background-color: $backColor;
+	color: $textColor;
+	text-align:center;
+}
+.one{
+	background-color: $divColor1;
+	border-radius: $radius;
+	//float: left;
+	text-align:center;
+
+	height: $defHeight;
+	width: $defWidth;
+	margin: $defMargin;
+}
+.two{
+	//background-color: $divColor2;
+	border-radius: $radius;
+	//float: right;
+	text-align:center;
+	height: $defHeight;
+	width: $defWidth;
+	margin: $defMargin;
+}
+.gm1{
+	margin:$defMargin;
+}
+.progressA{
+	width: $defWidth;
+	margin: $defMargin;
+
+}
+.progressB{
+	width: $defWidth;
+	margin: $defMargin;
+
+}
+#playerA{
+	margin:$defMargin;
+	.nameDiv, .hit, .kick{
+		background-color: $divColor1;
+		border-radius: $radius;
+		//float: right;
+		text-align:center;
+		height: $defHeight;
+		width: $defWidth;
+		margin: $defMargin;
+		.life{
+		display: inline-block;
+		background-color: black;
+		width: 100%;
+
+		.progress{
+		display: inline;
+			}
+		}
+	}
+}
+#playerB{
+	margin:$defMargin;
+	
+	.nameDiv, .hit, .kick{
+		background-color: $divColor2;
+		border-radius: $radius;
+		//float: right;
+		text-align:center;
+		height: $defHeight;
+		width: $defWidth;
+		margin: $defMargin;
+
+	}
+}
+.game{
+	background-color: $divColorGame;
+	border-radius: $radius;
+	text-align:center;
+	
+	width: $defWidth;
+	margin: $defMargin;
+	height: 1.5*$defHeight;
+	
+}
+.hit{
+	
+}
+.kick{
+	
+}
+.modal-wrap{
+		width: 100%;
+		height: 100%;
+		background-color: rgba(155,155,155,0.6);
+
+		position: fixed;
+		top: 0px;
+		left: 0px;
+
+		display: none;
+	}
+	.modal{
+		color: $modalText;
+		border: 1px solid black;
+		background-color: white;
+		position: relative;
+		top: calc(50% - 200px);
+
+		height: 400px;
+		width: 400px;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.exit{
+		float: right;
+	}
+	.modal h3{
+		margin-top: 100px;
+	}
+	.yes, .no{
+		padding: 0 30px;
+		border: 1px solid blue;
+		text-decoration: none;
+	}
+	.modal-on{
+		overflow: hidden;
+	}
+	// .life{
+	// 	display: inline;
+	// 	background-color: black;
+	// 	width: 100px;
+	// }
+	// .progress{
+	// 	display: inline;
+	// }

@@ -1,0 +1,101 @@
+body {
+  background-color: #888;
+  color: #eee;
+  text-align: center; }
+
+.one {
+  background-color: blue;
+  border-radius: 4px;
+  text-align: center;
+  height: 40px;
+  width: 22vw;
+  margin: 10px; }
+
+.two {
+  border-radius: 4px;
+  text-align: center;
+  height: 40px;
+  width: 22vw;
+  margin: 10px; }
+
+.gm1 {
+  margin: 10px; }
+
+.progressA {
+  width: 22vw;
+  margin: 10px; }
+
+.progressB {
+  width: 22vw;
+  margin: 10px; }
+
+#playerA {
+  margin: 10px; }
+  #playerA .nameDiv, #playerA .hit, #playerA .kick {
+    background-color: blue;
+    border-radius: 4px;
+    text-align: center;
+    height: 40px;
+    width: 22vw;
+    margin: 10px; }
+    #playerA .nameDiv .life, #playerA .hit .life, #playerA .kick .life {
+      display: inline-block;
+      background-color: black;
+      width: 100%; }
+      #playerA .nameDiv .life .progress, #playerA .hit .life .progress, #playerA .kick .life .progress {
+        display: inline; }
+
+#playerB {
+  margin: 10px; }
+  #playerB .nameDiv, #playerB .hit, #playerB .kick {
+    background-color: red;
+    border-radius: 4px;
+    text-align: center;
+    height: 40px;
+    width: 22vw;
+    margin: 10px; }
+
+.game {
+  background-color: green;
+  border-radius: 4px;
+  text-align: center;
+  width: 22vw;
+  margin: 10px;
+  height: 60px; }
+
+.modal-wrap {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(155, 155, 155, 0.6);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: none; }
+
+.modal {
+  color: #555;
+  border: 1px solid black;
+  background-color: white;
+  position: relative;
+  top: calc(50% - 200px);
+  height: 400px;
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+  text-align: center; }
+
+.exit {
+  float: right; }
+
+.modal h3 {
+  margin-top: 100px; }
+
+.yes, .no {
+  padding: 0 30px;
+  border: 1px solid blue;
+  text-decoration: none; }
+
+.modal-on {
+  overflow: hidden; }
+
+/*# sourceMappingURL=main.css.map */
