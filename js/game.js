@@ -62,13 +62,10 @@ Game.prototype.updateStats = function() {
 
 
 	Game.prototype.condition = function(attacker,opponent){
-		// if (playerLife <= 0) {
-		// 	// this.setMaxLife();
-			console.log(attacker,opponent);
-			if (opponent.life <= 0) {
-				opponent.life = 0;
-				this.gameOver(attacker.name);
 
+		if (opponent.life <= 0) {
+			opponent.life = 0;
+			this.gameOver(attacker.name);
 		}else{
 			return opponent.life;
 		}
@@ -91,10 +88,5 @@ Game.prototype.updateStats = function() {
 		});
 	
 }
-
-
-
-
-
 
 
